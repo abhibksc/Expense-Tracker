@@ -5,6 +5,8 @@ import Body from "./src/Components/Home/Body";
 import ForgotPassword from "./src/Components/ForgotPassword";
 import AddExpenses from "./src/Components/Add-Expenses/AddExpenses";
 import Profile from "./src/Components/Profile/Profile";
+import LoginModal from "./src/LoginModal";
+import SignupModal from "./src/SignupModal";
 
 
 const AppRouter = createBrowserRouter([
@@ -23,10 +25,7 @@ const AppRouter = createBrowserRouter([
                 path: "/AddExpenses",
                 element: <AddExpenses />
             },
-            {
-                path: "/Profile",
-                element: <Profile />
-            },
+           
 
 
         ],
@@ -37,6 +36,14 @@ const AppRouter = createBrowserRouter([
         path: "/forget",
         element: <ForgotPassword />
     },
+
+    {
+        path: "/Profile",
+        element: <Profile />
+    },
+
+   
+
 
 
 ])
